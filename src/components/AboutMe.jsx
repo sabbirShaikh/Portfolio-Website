@@ -131,6 +131,8 @@ export default function AboutMe() {
       </div>
     </div>
 
+    
+
     {/* Enhanced & Centered Education Heading */}
     <div className="mb-20 px-4 text-center" id="education">
       <div className="inline-flex items-center justify-center gap-4 w-full">
