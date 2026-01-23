@@ -43,7 +43,7 @@ export default function Home() {
         </p>
       </div>
 
-      <h1 className="text-6xl md:text-7xl lg:text-6xl font-black mt-2 tracking-tight bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent">
+      <h1 className="text-5xl md:text-7xl lg:text-6xl font-black mt-2 tracking-tight bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent">
         Sk Sabbir Ali
       </h1>
 
