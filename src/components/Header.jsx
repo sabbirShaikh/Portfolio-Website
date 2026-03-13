@@ -11,7 +11,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["About", "Skills", "Education", "Projects", "Contact"];
+  const navItems = ["About", "Education", "Skills", "Projects", "Contact"];
 
   // Smooth Scroll Handler
   const scrollToSection = (e, id) => {
@@ -73,7 +73,7 @@ const Header = () => {
                 onClick={(e) => scrollToSection(e, 'contact')}
                 className="bg-[#64ffda] hover:shadow-[0_0_20px_rgba(100,255,218,0.4)] text-[#0a192f] px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
               >
-                Hire Me
+                Contact Me
               </a>
             </div>
 

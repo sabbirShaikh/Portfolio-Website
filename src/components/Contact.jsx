@@ -28,7 +28,7 @@ export default function Contact() {
         "service_kd8eon7", // 🔹 Your EmailJS service ID
         "template_qw2u6op", // 🔹 Your EmailJS template ID
         formData,
-        "USlFRmK_yPHdLo-8d" // 🔹 Your EmailJS public key
+        "USlFRmK_yPHdLo-8d", // 🔹 Your EmailJS public key
       )
       .then(
         () => {
@@ -38,13 +38,13 @@ export default function Contact() {
           // Hide success message after 3s
           setTimeout(
             () => setStatus({ loading: false, success: false, error: false }),
-            3000
+            3000,
           );
         },
         (error) => {
           console.error("EmailJS Error:", error);
           setStatus({ loading: false, success: false, error: true });
-        }
+        },
       );
   };
 
@@ -56,9 +56,46 @@ export default function Contact() {
   return (
     <section className="bg-[#0a192f] text-white" id="contact">
       <div className="max-w-4xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-12">
-          Contact Me
-        </h2>
+        {/* Techy Contact Heading */}
+        <div className="mb-12 text-center font-mono">
+          {/* // label */}
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <span className="text-[#64ffda]/50 text-xs tracking-widest">
+              //
+            </span>
+            <span className="text-[#64ffda]/70 text-[11px] tracking-[3px] uppercase">
+              contact.init()
+            </span>
+            <span className="text-[#64ffda]/50 text-xs tracking-widest">
+              //
+            </span>
+          </div>
+
+          {/* Main title */}
+          <h2 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-none">
+            <span className="text-[#64ffda]">&lt;</span>
+            Contact
+            <span className="text-[#64ffda]">/&gt;</span>
+            <span
+              className="inline-block w-[3px] h-[0.8em] bg-[#64ffda] ml-2 align-middle rounded-sm"
+              style={{ animation: "blink 1.1s step-end infinite" }}
+            />
+          </h2>
+
+          {/* Scanline underline */}
+          <div className="flex items-center justify-center gap-3 mt-4">
+            <div className="h-[2px] w-20 bg-gradient-to-r from-transparent via-[#64ffda66] to-transparent rounded" />
+            <span className="text-[#64ffda]/40 text-[10px] tracking-[6px] font-mono">
+              ···
+            </span>
+            <div className="h-[2px] w-20 bg-gradient-to-l from-transparent via-[#64ffda66] to-transparent rounded" />
+          </div>
+
+          {/* Subtitle comment */}
+          <p className="mt-3 text-gray-600 text-[11px] tracking-[2px] uppercase font-mono">
+            // let's build something together
+          </p>
+        </div>
 
         {/* Success Message */}
         {status.success && (
