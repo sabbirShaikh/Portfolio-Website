@@ -25,10 +25,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_kd8eon7", // 🔹 Your EmailJS service ID
-        "template_qw2u6op", // 🔹 Your EmailJS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formData,
-        "USlFRmK_yPHdLo-8d", // 🔹 Your EmailJS public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {

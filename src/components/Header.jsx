@@ -11,7 +11,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["About", "Education", "Skills", "Projects", "Contact"];
+  const navItems = ["About", "Experience", "Education", "Skills", "Projects", "Contact"];
 
   // Smooth Scroll Handler
   const scrollToSection = (e, id) => {

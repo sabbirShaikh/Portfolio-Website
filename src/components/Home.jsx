@@ -14,9 +14,9 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
       strings: [
-        "MERN Stack Developer",
-        "React Developer",
-        "Full-Stack Engineer",
+        "Software Developer",
+        "Full-Stack Developer",
+        "React & Node.js Developer",
       ],
       typeSpeed: 60,
       backSpeed: 40,
@@ -55,8 +55,8 @@ export default function Home() {
       <div className="w-28 h-1.5 bg-gradient-to-r from-[#64ffda] to-transparent my-8 rounded-full"></div>
 
       <p className="text-gray-400 text-lg md:text-xl max-w-md leading-relaxed backdrop-blur-sm">
-        A passionate <span className="text-white font-medium">MERN Stack Developer</span> who loves building responsive,
-        modern, and user-friendly web applications. I specialize in <span className="text-[#64ffda]">React, Node.js, and MongoDB</span>.
+        A passionate <span className="text-white font-medium">Software Developer</span> who loves building responsive,
+        modern, and user-friendly web applications. I specialize in <span className="text-[#64ffda]">React, Node.js, TypeScript, and PostgreSQL</span>.
       </p>
 
       {/* CTA Buttons */}
